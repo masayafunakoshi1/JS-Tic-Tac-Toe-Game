@@ -9,16 +9,22 @@ body {
   align-content: center;
   text-align: center;
 
-  background: #e5b068;
-  background: -webkit-linear-gradient(top left, #e5b068, #4ac4e7);
-  background: -moz-linear-gradient(top left, #e5b068, #4ac4e7);
-  background: linear-gradient(to bottom right, #e5b068, #4ac4e7);
+  background: #2c2c2c;
+  background: -webkit-linear-gradient(top left, #000000, #6b6b6b);
+  background: -moz-linear-gradient(top left, #000000, #6b6b6b);
+  background: linear-gradient(to bottom right, #000000, #6b6b6b);
   width: 100%;
-  min-height: 100vh;
+  min-height: 800px;
 }
 
 .title {
+  position: absolute;
+  bottom: 60%;
+  left: 5%;
+  font-size: 30pt;
   margin-bottom: 20px;
+  color: white;
+
 }
 
 .menu {
@@ -27,8 +33,8 @@ body {
 }
 
 .grid {
+  display: flex;
   grid-template-columns: repeat(3, auto);
-  border: black 3px solid;
   display: inline-grid;
 }
 
@@ -40,13 +46,20 @@ body {
   justify-content: center;
   align-items: center;
 
-  border: black 3px solid;
+  border: rgb(255, 255, 255) 2px solid;
   cursor: pointer;
-  font-size: 40pt;
+  font-size: 80pt;
+  font-family: "permanent-marker", cursive;
+  color: white;
+  z-index: 100;
 }
 
 .game-status {
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 40%;
+  left: 5.5%;
+  font-size: 20pt;
+  color: white;
 }
 
 button {
@@ -54,13 +67,36 @@ button {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  background: rgb(185, 183, 26);
+  background: #949494;
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
 }
 
 button:hover {
   cursor: pointer;
-  background: rgb(226, 223, 12);
+  background: #afafaf;
   color: white;
 }
+
+/* Custom shape styling */
+.custom-shape-divider-top-1632950971 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1632950971 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 160px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1632950971 .shape-fill {
+  fill: rgb(10, 10, 10);
+}
+
